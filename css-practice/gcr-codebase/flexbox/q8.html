@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #222;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            z-index: 1;
+        }
+
+        .dashboard {
+            display: flex;
+            padding-top: 60px;
+        }
+
+        .sidebar {
+            width: 200px;
+            min-height: calc(100vh - 60px);
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .boxes {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 25px;
+            flex: 1;
+            box-shadow: 0 3px 10px gray;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .dashboard {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: auto;
+                min-height: auto;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Dashboard</h2>
+    </header>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </aside>
+
+        <main class="content">
+
+            <h1>Dashboard</h1>
+
+            <div class="boxes">
+
+                <div class="box">
+                    <h2>Users</h2>
+                    <p>There are 100 registered users.</p>
+                </div>
+
+                <div class="box">
+                    <h2>Projects</h2>
+                    <p>There are 20 active projects.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

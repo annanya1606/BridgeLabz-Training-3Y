@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout</title>
+
+    <style>
+        /* Basic page styling */
+        body {
+            margin: 0;
+            background-color: #eeeeee;
+            font-family: Georgia, serif;
+        }
+
+        /* Main content area */
+        .newspaper {
+            background-color: white;
+            padding: 30px;
+            margin: 30px;
+        }
+
+        /* Heading spans all columns */
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            column-span: all;
+        }
+
+        /* Three newspaper columns */
+        .article {
+            column-count: 3;
+            column-gap: 30px;
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Image aligned to the left */
+        .article img {
+            width: 150px;
+            height: 100px;
+            float: left;
+            margin: 0 15px 10px 0;
+        }
+
+        /* Paragraph spacing */
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 700px) {
+            .article {
+                column-count: 2;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .article {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="newspaper">
+
+        <h1>Daily News</h1>
+
+        <div class="article">
+
+            <p>
+                <img src="https://picsum.photos/150/100" alt="News Image">
+
+                Technology is changing the world rapidly.
+                People are using computers and smartphones
+                for communication, education and entertainment.
+            </p>
+
+            <p>
+                The internet has made information available
+                to people around the world. Students can attend
+                online classes and learn new skills from home.
+            </p>
+
+            <p>
+                Modern cities are also becoming smarter.
+                Technology is being used in transportation,
+                healthcare and public services.
+            </p>
+
+            <p>
+                Education is another field that has changed
+                greatly because of technology. Digital books,
+                online courses and educational videos help
+                students learn more easily.
+            </p>
+
+            <p>
+                Businesses are also using technology to improve
+                their services. Online shopping and digital
+                payments have become common in everyday life.
+            </p>
+
+            <p>
+                Technology has many advantages, but it should
+                be used carefully. Maintaining a balance between
+                digital activities and real life is important.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
