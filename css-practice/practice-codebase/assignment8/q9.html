@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles Summary</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Grid layout */
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 50px 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Principle boxes */
+        .box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+            transition: background 0.5s ease,
+                        color 0.5s ease,
+                        transform 0.3s ease;
+        }
+
+        /* Hover effect */
+        .box:hover {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .box h2 {
+            margin-bottom: 15px;
+        }
+
+        .box p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* CSS code example */
+        .box code {
+            display: block;
+            background-color: #eee;
+            color: #222;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        .box:hover code {
+            background-color: white;
+            color: #222;
+        }
+
+        /* Single column below 600px */
+        @media (max-width: 600px) {
+            .principles {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Responsive Design Principles</h1>
+        <p>Quick Summary of Important Concepts</p>
+    </header>
+
+    <main>
+        <section class="principles">
+
+            <!-- Fluid Layouts -->
+            <article class="box">
+                <h2>Fluid Layouts</h2>
+
+                <p>
+                    Fluid layouts use flexible units such as percentages
+                    to allow content to adjust according to screen size.
+                </p>
+
+                <code>
+                    width: 100%;
+                </code>
+            </article>
+
+            <!-- Flexible Media -->
+            <article class="box">
+                <h2>Flexible Media</h2>
+
+                <p>
+                    Flexible media allows images and videos to resize
+                    automatically so they fit within their containers.
+                </p>
+
+                <code>
+                    img {
+                    <br>
+                    &nbsp;&nbsp;max-width: 100%;
+                    <br>
+                    &nbsp;&nbsp;height: auto;
+                    <br>
+                    }
+                </code>
+            </article>
+
+            <!-- Breakpoints -->
+            <article class="box">
+                <h2>Breakpoints</h2>
+
+                <p>
+                    Breakpoints allow different styles to be applied
+                    at specific screen widths using media queries.
+                </p>
+
+                <code>
+                    @media (max-width: 600px) {
+                    <br>
+                    &nbsp;&nbsp;display: block;
+                    <br>
+                    }
+                </code>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

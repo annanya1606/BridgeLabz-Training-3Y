@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Filter Gallery</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Gallery using Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Image box */
+        figure {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px #aaa;
+        }
+
+        /* Image styling */
+        figure img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: filter 0.5s ease;
+        }
+
+        /* Different filters */
+        .blur {
+            filter: blur(4px);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .brightness {
+            filter: brightness(150%);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .hue {
+            filter: hue-rotate(120deg);
+        }
+
+        /* Remove filter on hover */
+        figure img:hover {
+            filter: none;
+        }
+
+        /* Captions */
+        figcaption {
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* One column below 600px */
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Image Filter Gallery</h1>
+    </header>
+
+    <main>
+        <section class="gallery">
+
+            <figure>
+                <img class="blur"
+                    src="https://picsum.photos/id/1015/400/300"
+                    alt="Mountain">
+                <figcaption>Blur</figcaption>
+            </figure>
+
+            <figure>
+                <img class="grayscale"
+                    src="https://picsum.photos/id/1016/400/300"
+                    alt="Nature">
+                <figcaption>Grayscale</figcaption>
+            </figure>
+
+            <figure>
+                <img class="sepia"
+                    src="https://picsum.photos/id/1025/400/300"
+                    alt="Dog">
+                <figcaption>Sepia</figcaption>
+            </figure>
+
+            <figure>
+                <img class="brightness"
+                    src="https://picsum.photos/id/1035/400/300"
+                    alt="River">
+                <figcaption>Brightness</figcaption>
+            </figure>
+
+            <figure>
+                <img class="contrast"
+                    src="https://picsum.photos/id/1043/400/300"
+                    alt="Forest">
+                <figcaption>Contrast</figcaption>
+            </figure>
+
+            <figure>
+                <img class="hue"
+                    src="https://picsum.photos/id/1069/400/300"
+                    alt="Beach">
+                <figcaption>Hue Rotate</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Responsive Image Filter Gallery</p>
+    </footer>
+
+</body>
+
+</html>
