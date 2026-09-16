@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pricing {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 90%;
+        }
+
+        .card {
+            background-color: white;
+            width: 30%;
+            min-height: 350px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            transition: 0.3s;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .card h2 {
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .middle {
+            background-color: #d9eaff;
+            min-height: 390px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 750px) {
+
+            body {
+                padding: 30px 0;
+            }
+
+            .pricing {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            .middle {
+                min-height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="pricing">
+
+        <div class="card">
+            <h2>Basic</h2>
+            <div class="price">₹499</div>
+            <p>5 Projects</p>
+            <p>10 GB Storage</p>
+            <p>Email Support</p>
+        </div>
+
+        <div class="card middle">
+            <h2>Premium</h2>
+            <div class="price">₹999</div>
+            <p>20 Projects</p>
+            <p>50 GB Storage</p>
+            <p>Priority Support</p>
+        </div>
+
+        <div class="card">
+            <h2>Pro</h2>
+            <div class="price">₹1499</div>
+            <p>Unlimited Projects</p>
+            <p>100 GB Storage</p>
+            <p>24/7 Support</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 30px 20px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .product-card h2 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Product Gallery</h1>
+
+    <main class="product-grid">
+
+        <div class="product-card">
+            <h2>Wireless Headphones</h2>
+            <p>₹1,999</p>
+        </div>
+
+        <div class="product-card">
+            <h2>Smart Watch</h2>
+            <p>₹2,499</p>
+        </div>
+
+        <div class="product-card">
+            <h2>Bluetooth Speaker</h2>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="product-card">
+            <h2>Gaming Mouse</h2>
+            <p>₹899</p>
+        </div>
+
+        <div class="product-card">
+            <h2>Mechanical Keyboard</h2>
+            <p>₹2,999</p>
+        </div>
+
+        <div class="product-card">
+            <h2>Laptop Stand</h2>
+            <p>₹799</p>
+        </div>
+
+        <div class="product-card">
+            <h2>USB-C Hub</h2>
+            <p>₹1,299</p>
+        </div>
+
+        <div class="product-card">
+            <h2>Power Bank</h2>
+            <p>₹1,099</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
