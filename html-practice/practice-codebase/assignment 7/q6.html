@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.animation-area {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.box {
+    padding: 20px;
+    background-color: #1769aa;
+    color: white;
+    animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.changing-text {
+    animation: textChange 2s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-50px);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-80px);
+    }
+}
+
+@keyframes textChange {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+    }
+}
+
+
+    </style>
+   
+</head>
+<body>
+
+<header>
+    <h1>CSS Animation Demo</h1>
+</header>
+
+<main class="animation-area">
+
+    <div class="box">Moving Box</div>
+
+    <div class="ball">Ball</div>
+
+    <h2 class="changing-text">CSS is Fun!</h2>
+
+</main>
+
+</body>
+</html>

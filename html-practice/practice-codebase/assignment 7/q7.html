@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple UI</title>
+    <style>
+        
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f0ff, #f9e8ff);
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #1769aa;
+}
+
+.button-area {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1769aa;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d4f80;
+}
+
+.clear {
+    background-color: #777;
+}
+
+.clear:hover {
+    background-color: #555;
+}
+
+
+    </style>
+   
+</head>
+<body>
+
+<header>
+    <h1>Simple User Interface</h1>
+</header>
+
+<main>
+    <section class="card">
+
+        <h2>Search Products</h2>
+
+        <input type="text" placeholder="Search here...">
+
+        <select>
+            <option>Select Category</option>
+            <option>Books</option>
+            <option>Clothes</option>
+            <option>Electronics</option>
+        </select>
+
+        <div class="button-area">
+            <button>Search</button>
+            <button class="clear">Clear</button>
+        </div>
+
+    </section>
+</main>
+
+</body>
+</html>
