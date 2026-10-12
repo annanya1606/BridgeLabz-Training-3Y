@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-colour: black;
+            --custom:650px;
+        }
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid var(--primary-colour);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: aquamarine;
+            /* width: 630px; */
+            width: var(--custom);
+            height: 600px;
+            /* border: 2px solid brown; */
+            border: 2px solid var(--primary-colour);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px 50px 10px black; */
+            /* box-shadow: 10px 10px 10px; */
+            /* box-shadow: inset 10px 15px blue; */
+        }
+        #head1{
+            text-shadow: 2px 2px 4px white;
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo.png" alt="logo">
+            <h2 id="head1">  welcome</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nisi laborum quidem optio iste.
+                Voluptatibus fugiat sed aspernatur nesciunt nulla impedit molestiae unde quod nostrum quae? Doloremque,
+                ipsum nam? Laborum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

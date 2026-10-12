@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container {
+            background-color: rgb(247, 247, 98);
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            height: 800px;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            
+        }
+
+        #box1 {
+            background-color: bisque;
+            flex-grow: 1;
+            justify-content: right;
+        }
+
+        @media(min-width : 0px) and (max-width: 640px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading"> Welcom to ABC</h1>
+    <p1> Lorem ipsum dolor sit amet consectetur, adipisicing elit.Saepe architecto tempora qui dignissimos dolor
+        necessitatibus voluptas, distinctio quidem magnam modi quasi delectus perferendis quae nulla sapiente similique
+        voluptatibus doloribus beatae.</p1>
+    <p class="highlight"> lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum
+        dolor sit amet
+        consectetur
+        adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+        voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+    </p>
+    <div class="box" id="box1">
+        <img class="img2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmdYawc1ho1dORFfTFY_WcQLkcW08fu70BbJS8El5vw&s=10" />
+
+    </div>
+    </div>
+</body>
+
+</html>
