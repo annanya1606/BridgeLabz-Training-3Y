@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Security</title>
+</head>
+<body>
+    <h1>Secure Registration Form</h1>
+    <form action="#" method="post" autocomplete="off">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <input type="submit" value="Register">
+
+    </form>
+    <h2>Security Note</h2>
+    <p>
+        Turning off autocomplete can help protect sensitive information
+        from being automatically saved or filled in by the browser.
+        However, autocomplete="off" does not guarantee complete security.
+    </p>
+</body>
+</html>
