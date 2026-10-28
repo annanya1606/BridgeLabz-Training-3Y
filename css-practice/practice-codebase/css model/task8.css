@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fa;
+    color: #222;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    padding: 25px 15px;
+}
+
+h2 {
+    color: #243b55;
+    text-align: center;
+}
+.box-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.margin-layer {
+    background-color: #ffe0b2;
+    padding: 25px;
+    margin: 20px;
+    outline: 2px dashed #e67e22;
+    text-align: center;
+}
+
+.border-layer {
+    background-color: #f5b7b1;
+    border: 8px solid #c0392b;
+    padding: 20px;
+}
+
+.padding-layer {
+    background-color: #d5f5e3;
+    padding: 20px;
+}
+
+.content-layer {
+    background-color: #aed6f1;
+    padding: 25px;
+    min-width: 120px;
+    font-weight: bold;
+    color: #154360;
+}
+
+.layer-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    max-width: 600px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.description p {
+    background-color: white;
+    padding: 10px;
+    border-left: 4px solid #287271;
+    margin: 10px 0;
+}
+
+.comparison {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.comparison-item {
+    width: 280px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.default-box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #c0392b;
+    background-color: #fadbd8;
+    margin: 15px auto;
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #2471a3;
+    background-color: #d6eaf8;
+    margin: 15px auto;
+}
+
+.comparison-item p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
