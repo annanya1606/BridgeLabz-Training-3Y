@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6fa;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 230px;
+            background-color: #202124;
+            color: white;
+            padding: 20px 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #4f46e5;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .profile span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .menu-items {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            padding: 12px 15px;
+            margin: 5px 0;
+
+            border-radius: 8px;
+            color: #c7c7c7;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .menu-items:hover {
+            background-color: #303134;
+            color: white;
+            transform:rotate(45deg);
+        }
+
+        .menu-items.active {
+            background-color: #4f46e5;
+            color: white;
+        }
+
+        .icon {
+            width: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .bottom-menu {
+            margin-top: auto;
+        }
+
+        .main {
+            flex: 1;
+            background-color: #f5f6fa;
+            padding: 30px;
+        }
+
+        .topbar {
+            height: 60px;
+            background-color: white;
+
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 25px;
+
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+            margin-bottom: 25px;
+        }
+
+        .content {
+            background-color: white;
+
+            min-height: calc(100vh - 145px);
+
+            border-radius: 10px;
+
+            padding: 30px;
+
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .content h1 {
+            font-size: 32px;
+            color: #202124;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <div class="profile">
+
+                <div class="profile-icon">
+                    A
+                </div>
+
+                <span>Annanya</span>
+
+            </div>
+
+
+            <div class="menu">
+
+                <div class="menu-items active">
+                    <span class="icon">⌂</span>
+                    <span>Home</span>
+                </div>
+
+                <div class="menu-items">
+                    <span class="icon">▣</span>
+                    <span>Activity</span>
+                </div>
+
+                <div class="menu-items">
+                    <span class="icon">▰</span>
+                    <span>Chat</span>
+                </div>
+
+                <div class="menu-items">
+                    <span class="icon">👥</span>
+                    <span>Teams</span>
+                </div>
+
+                <div class="menu-items">
+                    <span class="icon">▤</span>
+                    <span>Calendar</span>
+                </div>
+
+                <div class="menu-items">
+                    <span class="icon">☁</span>
+                    <span>OneDrive</span>
+                </div>
+
+                <div class="menu-items">
+                    <span class="icon">⋯</span>
+                    <span>More</span>
+                </div>
+
+            </div>
+
+
+            <div class="bottom-menu">
+
+                <div class="menu-items">
+                    <span class="icon">⚙</span>
+                    <span>Settings</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main">
+
+            <div class="topbar">
+                <h3>Dashboard</h3>
+            </div>
+
+            <div class="content">
+
+                <h1>Dashboard</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
