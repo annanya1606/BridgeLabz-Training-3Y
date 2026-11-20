@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .blog-container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #222;
+            color: white;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: lightgray;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: white;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar p {
+            padding: 10px 0;
+        }
+
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .post {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .post h2 {
+            margin-bottom: 15px;
+        }
+
+        .post p {
+            line-height: 1.6;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+
+            .blog-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+            }
+
+            .main {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blog-container">
+
+        <header>
+            <h1>My Blog</h1>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <p>Technology</p>
+            <p>Programming</p>
+            <p>Data Science</p>
+            <p>Artificial Intelligence</p>
+        </aside>
+
+        <main class="main">
+
+            <article class="post">
+                <h2>Introduction to Data Science</h2>
+                <p>
+                    Data Science combines programming, statistics and
+                    data analysis to find useful information from data.
+                </p>
+            </article>
+
+            <article class="post">
+                <h2>Learning Web Development</h2>
+                <p>
+                    HTML and CSS are the basic technologies used to
+                    create and design modern web pages.
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>Contact: myblog@example.com | Phone: 9876543210</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

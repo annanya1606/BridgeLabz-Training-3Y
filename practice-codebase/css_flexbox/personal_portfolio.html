@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+}
+
+.about {
+    width: 45%;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+.image-section {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Annanya Jain</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Annanya Jain, a Computer Science student
+                interested in Data Science and Artificial Intelligence.
+                I enjoy learning new technologies and creating simple
+                and useful projects.
+            </p>
+        </section>
+
+        <section class="image-section">
+            <img src="profile.jpg" alt="Profile Image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Annanya Jain. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
