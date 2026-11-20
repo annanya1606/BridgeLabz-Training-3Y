@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Design Principles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial;
+            background: #eee;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            background: linear-gradient(blue, purple);
+            color: white;
+        }
+
+        code {
+            display: block;
+            margin-top: 15px;
+        }
+
+        @media(max-width: 600px) {
+            .principles {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Design Principles</h1>
+
+    <main class="principles">
+        <section class="box">
+            <h2>Fluid Layouts</h2>
+            <p>Layouts adjust according to screen size.</p>
+            <code>width: 100%;</code>
+        </section>
+
+        <section class="box">
+            <h2>Flexible Media</h2>
+            <p>Images adjust to fit their containers.</p>
+            <code>max-width: 100%;</code>
+        </section>
+
+        <section class="box">
+            <h2>Breakpoints</h2>
+            <p>Change layout at different screen sizes.</p>
+            <code>@media(max-width: 600px)</code>
+        </section>
+    </main>
+
+</body>
+</html>

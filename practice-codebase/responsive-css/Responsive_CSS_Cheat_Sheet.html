@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial;
+            background: #eee;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            background: lightblue;
+            transform: scale(1.03);
+        }
+
+        @media(max-width: 700px) {
+            .topics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive CSS Cheat Sheet</h1>
+
+    <main class="topics">
+        <section class="box">
+            <h2>Filters</h2>
+            <p>filter: grayscale(100%);</p>
+        </section>
+
+        <section class="box">
+            <h2>Media Queries</h2>
+            <p>@media(max-width: 700px)</p>
+        </section>
+
+        <section class="box">
+            <h2>Responsive Design</h2>
+            <p>width: 100%;</p>
+        </section>
+
+        <section class="box">
+            <h2>Typography</h2>
+            <p>font-size: clamp(1rem, 2vw, 2rem);</p>
+        </section>
+    </main>
+
+</body>
+</html>

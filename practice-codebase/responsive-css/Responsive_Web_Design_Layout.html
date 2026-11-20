@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .features {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .box {
+            flex: 1;
+            background: lightblue;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        @media(max-width: 750px) {
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>My Website</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome</h1>
+        <section class="features">
+            <div class="box">Learn</div>
+            <div class="box">Create</div>
+            <div class="box">Grow</div>
+        </section>
+    </main>
+
+    <footer>Copyright 2026</footer>
+
+</body>
+</html>

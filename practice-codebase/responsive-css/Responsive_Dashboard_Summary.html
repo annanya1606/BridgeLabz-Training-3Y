@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #eee;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        aside {
+            background: lightblue;
+            padding: 20px;
+        }
+
+        aside a {
+            display: block;
+            margin: 15px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            animation: fade 1s;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 10px gray;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media(max-width: 750px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                grid-column: 1;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <header>
+            <h1>My Dashboard</h1>
+        </header>
+
+        <aside>
+            <h2>Menu</h2>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <main>
+            <h2>Dashboard Overview</h2>
+
+            <section class="cards">
+                <div class="card">
+                    <h3>Filters</h3>
+                    <p>CSS image filters.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Typography</h3>
+                    <p>Responsive text sizes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Media Queries</h3>
+                    <p>Responsive screen layouts.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cheat Sheet Links</h3>
+                    <a href="Responsive_CSS_Cheat_Sheet.html">Open Cheat Sheet</a>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

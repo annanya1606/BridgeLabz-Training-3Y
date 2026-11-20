@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            animation: fade 1s;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background: lightblue;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        section:hover {
+            transform: scale(1.03);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media(max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Image Gallery</h2>
+            <img src="https://picsum.photos/300/200" alt="Nature image">
+        </section>
+
+        <section>
+            <h2>Responsive Design</h2>
+            <p>Responsive design makes websites
+            adjust to different screen sizes.</p>
+        </section>
+
+        <section>
+            <h2>CSS Cheat Sheet</h2>
+            <p>Grid: display: grid;</p>
+            <p>Flexbox: display: flex;</p>
+            <p>Media Query: @media</p>
+        </section>
+    </main>
+
+    <footer>
+        Contact: hello@example.com
+    </footer>
+
+</body>
+</html>
