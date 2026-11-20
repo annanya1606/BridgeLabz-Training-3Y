@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+    color: #333333;
+}
+
+header {
+    background-color: #263238;
+    color: white;
+    padding: 25px;
+}
+header h1 {
+    text-shadow: 3px 3px 5px #888888;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+}
+.card {
+    width: 250px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-one {
+    box-shadow: 0 4px 8px #999999;
+}
+
+.card-two {
+    box-shadow: 0 8px 15px #777777;
+}
+
+.card-three {
+    box-shadow: 0 10px 25px #aaaaaa;
+}
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 30px #777777;
+}
+
+.profile-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #1976d2;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card h2 {
+    color: #1976d2;
+    text-shadow: 2px 2px 4px #cccccc;
+}
+
+footer {
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+}
