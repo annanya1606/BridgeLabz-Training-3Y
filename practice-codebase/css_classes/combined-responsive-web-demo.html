@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Responsive Web Demo</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #222;
+        }
+
+        /* Header and navigation using Flexbox */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #66ccff;
+        }
+
+        /* Main content using Grid */
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Common section styling */
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+
+            /* Fade-in animation */
+            animation: fadeIn 1s ease;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Image gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Explanation section */
+        .explanation p {
+            line-height: 1.7;
+        }
+
+        /* Cheat sheet */
+        .cheat-sheet div {
+            background-color: #eee;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cheat-sheet div:hover {
+            background-color: #d9f0ff;
+        }
+
+        .cheat-sheet h3 {
+            margin-bottom: 5px;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Stack all sections below 700px */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Responsive Web</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Image Gallery -->
+        <section class="section">
+            <h2>Image Gallery</h2>
+
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1015/300/200"
+                    alt="Mountain">
+
+                <img src="https://picsum.photos/id/1016/300/200"
+                    alt="Nature">
+
+                <img src="https://picsum.photos/id/1035/300/200"
+                    alt="River">
+
+                <img src="https://picsum.photos/id/1043/300/200"
+                    alt="Forest">
+            </div>
+        </section>
+
+        <!-- Responsive Design Explanation -->
+        <section class="section explanation">
+            <h2>Responsive Design</h2>
+
+            <p>
+                Responsive web design allows a website to adjust
+                its layout according to the screen size. Flexbox
+                and Grid can be used to arrange elements, while
+                media queries can change the layout on smaller
+                screens. Relative units and responsive typography
+                also help create a better experience on different
+                devices.
+            </p>
+        </section>
+
+        <!-- Cheat Sheet Preview -->
+        <section class="section cheat-sheet">
+            <h2>CSS Cheat Sheet</h2>
+
+            <div>
+                <h3>Flexbox</h3>
+                <p>Used for flexible row and column layouts.</p>
+            </div>
+
+            <div>
+                <h3>Grid</h3>
+                <p>Used for creating rows and columns.</p>
+            </div>
+
+            <div>
+                <h3>Media Query</h3>
+                <p>Changes styles based on screen size.</p>
+            </div>
+
+            <div>
+                <h3>Clamp</h3>
+                <p>Creates responsive font sizes.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: example@email.com</p>
+        <p>Phone: +91 98765 43210</p>
+    </footer>
+
+</body>
+
+</html>

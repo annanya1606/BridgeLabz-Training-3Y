@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Cards with Animation</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Cards container */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 50px 30px;
+        }
+
+        /* Profile card */
+        .card {
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+
+            /* Fade-in animation */
+            animation: fadeIn 1s ease;
+            transition: transform 0.3s ease;
+        }
+
+        /* Card hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Profile images */
+        .card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: filter 0.5s ease;
+        }
+
+        /* Different image filters */
+        .profile1 {
+            filter: grayscale(100%);
+        }
+
+        .profile2 {
+            filter: sepia(100%);
+        }
+
+        .profile3 {
+            filter: grayscale(70%);
+        }
+
+        /* Remove filter on hover */
+        .card:hover img {
+            filter: none;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        /* Fade-in keyframe animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stack cards below 800px */
+        @media (max-width: 800px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Team</h1>
+    </header>
+
+    <main>
+        <section class="card-container">
+
+            <article class="card">
+                <img class="profile1"
+                    src="https://i.pravatar.cc/300?img=47"
+                    alt="Profile of Ananya">
+
+                <h2>Ananya</h2>
+
+                <p>
+                    A creative web designer who enjoys
+                    creating simple and attractive websites.
+                </p>
+            </article>
+
+            <article class="card">
+                <img class="profile2"
+                    src="https://i.pravatar.cc/300?img=12"
+                    alt="Profile of Rahul">
+
+                <h2>Rahul</h2>
+
+                <p>
+                    A web developer who works on responsive
+                    and user-friendly web applications.
+                </p>
+            </article>
+
+            <article class="card">
+                <img class="profile3"
+                    src="https://i.pravatar.cc/300?img=32"
+                    alt="Profile of Priya">
+
+                <h2>Priya</h2>
+
+                <p>
+                    A data enthusiast interested in
+                    analytics and machine learning.
+                </p>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

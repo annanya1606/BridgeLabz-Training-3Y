@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography</title>
+
+    <style>
+        /* Basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Typography section */
+        .typography-section {
+            text-align: center;
+            padding: 80px 40px;
+            margin: 50px auto;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #aaa;
+        }
+
+        /* Responsive heading */
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            margin-bottom: 25px;
+        }
+
+        /* Responsive paragraph */
+        p {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Mobile readability */
+        @media (max-width: 700px) {
+            .typography-section {
+                padding: 50px 25px;
+                margin: 30px 15px;
+            }
+
+            h1 {
+                margin-bottom: 18px;
+            }
+
+            p {
+                line-height: 1.8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section class="typography-section">
+
+            <h1>Responsive Typography</h1>
+
+            <p>
+                Responsive typography allows text to automatically adjust
+                according to the screen size. Using relative units and the
+                clamp() function makes websites easier to read on desktops,
+                tablets, and mobile devices.
+            </p>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
