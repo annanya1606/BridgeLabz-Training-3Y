@@ -1,0 +1,16 @@
+
+body {
+    background: #f5f7fa;
+}
+
+.list-group-item {
+    padding: 18px;
+}
+
+.list-group-item:hover {
+    background: #eaf2ff;
+}
+
+footer {
+    margin-top: 30px;
+}

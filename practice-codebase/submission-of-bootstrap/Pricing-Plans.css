@@ -1,0 +1,19 @@
+
+.plan-card {
+    border: none;
+    box-shadow: 0 4px 10px #ddd;
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px #bbb;
+}
+
+.plan-card ul li {
+    padding: 8px;
+}
+
+footer {
+    margin-top: 30px;
+}

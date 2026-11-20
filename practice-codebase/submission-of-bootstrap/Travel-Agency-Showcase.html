@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Agency</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="Travel-Agency-Showcase.css">
+</head>
+<body>
+
+<header class="bg-primary text-white text-center p-4">
+<h1>Explore The World</h1>
+<p>Your Journey Begins Here</p>
+</header>
+
+<main>
+<section class="container my-4">
+
+<!-- Bootstrap carousel with automatic slide intervals -->
+<div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active" data-bs-interval="3000">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200" class="d-block w-100" alt="Mountains">
+<div class="carousel-caption">
+<h3>Beautiful Mountains</h3>
+<p>Discover peaceful mountain destinations.</p>
+</div>
+</div>
+
+<div class="carousel-item" data-bs-interval="4000">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" class="d-block w-100" alt="Beach">
+<div class="carousel-caption">
+<h3>Tropical Beaches</h3>
+<p>Enjoy relaxing beach holidays.</p>
+</div>
+</div>
+
+<div class="carousel-item" data-bs-interval="5000">
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1200" class="d-block w-100" alt="Italian Village">
+<div class="carousel-caption">
+<h3>Beautiful Cities</h3>
+<p>Explore amazing places around the world.</p>
+</div>
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</section>
+
+<section class="container my-5">
+<h2>Booking Progress</h2>
+
+<!-- progress bar shows 70% booking completion -->
+<div class="progress" style="height:25px;">
+<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%">
+70%
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-dark text-white text-center p-4">
+<p>Contact: travel@example.com | +91 9876543210</p>
+<p class="mb-0">© 2026 Explore The World</p>
+</footer>
+
+<!-- Bootstrap JavaScript is required for carousel controls -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

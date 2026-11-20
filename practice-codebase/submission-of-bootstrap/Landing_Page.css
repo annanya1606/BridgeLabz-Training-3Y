@@ -1,0 +1,15 @@
+
+.hero {
+    background: #eaf2ff;
+    padding: 100px 20px;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 60px 15px;
+    }
+}

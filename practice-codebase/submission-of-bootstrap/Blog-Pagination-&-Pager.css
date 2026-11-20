@@ -1,0 +1,17 @@
+
+body {
+    background: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.page-link {
+    color: #0d6efd;
+}
+
+footer {
+    margin-top: 30px;
+}
